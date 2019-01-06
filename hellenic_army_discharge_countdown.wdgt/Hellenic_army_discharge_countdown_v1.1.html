@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css" title="AppleStyle">
+        @import "Hellenic_army_discharge_countdown_v1.1.css";
+    </style>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/utilities.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/setup.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/InfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/GlassButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/Shape.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/Text.js" charset="utf-8"></script>
+	<script type="text/javascript" src="Hellenic_army_discharge_countdown_v1.1.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <div id="box">
+
+
+
+        </div>
+
+        <div id="timer">
+            <div id="timer-bg"></div>
+            <div id="countdown-time">
+                <div id="remaining-days" apple-text-overflow="">0</div>
+
+
+
+
+            <div id="label-days"></div>
+            </div>
+
+
+
+        </div>
+
+        <div id="event-label"></div>
+
+
+
+
+
+    <div apple-text-overflow="ellipsis" id="Full_Name"></div>
+
+
+    <div apple-text-overflow="ellipsis" id="Date_fire"></div>
+    <div id="info"></div>
+    </div>
+    <div id="back">
+       <img id="backImg" src="Images/back.png" alt="">
+
+        <div id="done"></div>
+    <select id="Rank_Input">
+	<option value="ΣΤΡ">ΣΤΡ</option>
+	<option value="ΔΝΕΑΣ">ΔΝΕΑΣ</option>
+	<option value="ΔΕΑ">ΔΕΑ</option>
+</select>
+    <input type="text" name="" value="" id="Surname_Input_field">
+    <select id="day_start">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+<option id="option" value="4">4</option>
+    <option id="option1">5</option>
+    <option id="option2" value="6">6</option>
+    <option id="option3" value="7">7</option>
+    <option id="option5">8</option>
+    <option id="option6">9</option>
+    <option id="option4">10</option>
+    <option id="option7">11</option>
+    <option id="option8">12</option>
+    <option id="option9">13</option>
+    <option id="option11">14</option>
+    <option id="option12">15</option>
+    <option id="option13">16</option>
+    <option id="option14">17</option>
+    <option id="option15">18</option>
+    <option id="option16">19</option>
+    <option id="option17">20</option>
+    <option id="option19">21</option>
+    <option id="option20">22</option>
+    <option id="option22">23</option>
+    <option id="option24">24</option>
+    <option id="option26">25</option>
+    <option id="option27">26</option>
+    <option id="option28">27</option>
+    <option id="option29">28</option>
+    <option id="option30">29</option>
+    <option id="option32">30</option>
+    <option id="option33">31</option>
+    </select>
+    <select id="month_start">
+	<option>1</option>
+	<option value="2">2</option>
+	<option>3</option>
+<option id="option10">4</option>
+    <option id="option18">5</option>
+    <option id="option21">6</option>
+    <option id="option23">7</option>
+    <option id="option25">8</option>
+    <option id="option31">9</option>
+    <option id="option34">10</option>
+    <option id="option35">11</option>
+    <option id="option36">12</option>
+    </select>
+    <select id="year_start">
+	<option>2008</option>
+	<option>2009</option>
+	<option>2010</option>
+  <option>2011</option>
+  <option>2012</option>
+  <option>2013</option>
+  <option>2014</option>
+  <option>2015</option>
+  <option>2016</option>
+  <option>2017</option>
+  <option>2018</option>
+  <option>2019</option>
+  <option>2020</option>
+</select>
+    <select id="Division_Input">
+	<option value="ΠΖ">Πεζικό</option>
+	<option value="ΠΒ">Πυροβολικό</option>
+	<option value="ΤΘ">Τεθωρακισμένα</option>
+<option id="option37" value="ΜΧ">Μηχανικό</option>
+    <option id="option38" value="ΔΒ">Διαβιβάσεις</option>
+    <option id="option39" value="ΥΓ">Υγειονομικό</option>
+    <option id="option40" value="ΤΧ">Τεχνικό</option>
+    	<option value="ΠΛ">Έρευνας και Πληροφορικής</option>
+    	<option value="ΥΠ">Υλικού Πολέμου</option>
+    	<option value="ΑΣ">Αεροπορία Στρατού</option>
+    </select>
+
+    <select id="shortened_selection" style="">
+	<option value="9">9μηνο</option>
+	<option value="6">6μηνο</option>
+	<option value="3">3μηνο</option>
+</select>
+    <div id="Is_short">
+	<input type="checkbox" name="Checkbox" id="shortel">
+	<div style="position: absolute; top: 2px; left: 18px; text-align: left; vertical-align: middle;" id="checkboxbutton1">Μειωμένη θητεία</div>
+</div>
+    <div apple-text-overflow="ellipsis" id="Rank_desc"></div>
+    <div apple-text-overflow="ellipsis" id="Division_desc"></div>
+    <div apple-text-overflow="ellipsis" id="Name_desc"></div>
+    <div apple-text-overflow="ellipsis" id="Date_desc"></div>
+    <div apple-text-overflow="ellipsis" id="Prison_desc"></div>
+    <input type="text" name="" value="" id="prison">
+
+    <div apple-text-overflow="ellipsis" id="url" onclick="widget.openURL('http://www.macgiorgosgr.com')"></div>
+    <div apple-text-overflow="ellipsis" id="e-mail"></div>
+    <div apple-text-overflow="ellipsis" id="e-mail_addr" onclick="widget.openURL('mailto:macgiorgosgr@macgiorgosgr.com')"></div>
+    </div>
+</body>
+</html>

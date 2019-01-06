@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css" title="AppleStyle">
+        @import "Hellenic_army_discharge_countdown_v1.1.css";
+    </style>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/utilities.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/setup.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/InfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/GlassButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/Shape.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/Text.js" charset="utf-8"></script>
+	<script type="text/javascript" src="Hellenic_army_discharge_countdown_v1.1.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <div id="box">
+
+
+
+        </div>
+
+        <div id="timer">
+            <div apple-part="com.apple.Dashcode.part.roundedrectangleshape" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 3; image-opacity: 0.46; image-top-color: 0.1018,0.3032,0.1622; image-bottom-color: 1.0000,1.0000,1.0000; image-radius: 18,18,18,18; image-border: 0; image-border-color: 0.1770,0.5475,0.2284; image-border-width: 1; shine-on: 1; shine-include-shine: 1; shine-strength: 0.25; shine-alpha-level: 0.00; shine-height: 0.67; glass-arc-height: 0.33; shine-include-bottom: 1; shine-over-border: 0; shadow-include-shadow: 0; shadow-blur: 3.00;" id="timer-bg" apple-group="roundedRectangleShape"></div>
+            <div id="countdown-time">
+                <div id="remaining-days" apple-default-image-visibility="hidden" apple-text-overflow="">0</div>
+
+
+
+
+            <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" id="label-days" apple-group="text" apple-default-image-visibility="hidden"></div>
+            </div>
+
+
+
+        </div>
+
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" id="event-label" apple-group="text"></div>
+
+
+
+
+
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-text-overflow="ellipsis" id="Full_Name" apple-group="text1"></div>
+
+
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="Date_fire" apple-group="text"></div>
+    <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
+    </div>
+    <div id="back">
+       <img id="backImg" src="Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.1500,0.1500,0.1500; image-border-width: 3; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+
+        <div id="done" class="apple-no-children" apple-part="com.apple.Dashcode.part.glassbutton"></div>
+    <select apple-part="com.apple.Dashcode.part.backpopupbutton" id="Rank_Input" apple-group="popup">
+	<option apple-group="popup" value="ΣΤΡ">ΣΤΡ</option>
+	<option apple-group="popup" value="ΔΝΕΑΣ">ΔΝΕΑΣ</option>
+	<option apple-group="popup" value="ΔΕΑ">ΔΕΑ</option>
+</select>
+    <input type="text" name="" value="" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" id="Surname_Input_field" apple-group="textfield">
+    <select apple-part="com.apple.Dashcode.part.backpopupbutton" id="day_start" apple-group="popup">
+	<option apple-group="popup" value="1">1</option>
+	<option apple-group="popup" value="2">2</option>
+	<option apple-group="popup" value="3">3</option>
+<option id="option" value="4">4</option>
+    <option id="option1">5</option>
+    <option id="option2" value="6">6</option>
+    <option id="option3" value="7">7</option>
+    <option id="option5">8</option>
+    <option id="option6">9</option>
+    <option id="option4">10</option>
+    <option id="option7">11</option>
+    <option id="option8">12</option>
+    <option id="option9">13</option>
+    <option id="option11">14</option>
+    <option id="option12">15</option>
+    <option id="option13">16</option>
+    <option id="option14">17</option>
+    <option id="option15">18</option>
+    <option id="option16">19</option>
+    <option id="option17">20</option>
+    <option id="option19">21</option>
+    <option id="option20">22</option>
+    <option id="option22">23</option>
+    <option id="option24">24</option>
+    <option id="option26">25</option>
+    <option id="option27">26</option>
+    <option id="option28">27</option>
+    <option id="option29">28</option>
+    <option id="option30">29</option>
+    <option id="option32">30</option>
+    <option id="option33">31</option>
+    </select>
+    <select apple-part="com.apple.Dashcode.part.backpopupbutton" id="month_start" apple-group="popup1">
+	<option apple-group="popup1">1</option>
+	<option apple-group="popup1" value="2">2</option>
+	<option apple-group="popup1">3</option>
+<option id="option10">4</option>
+    <option id="option18">5</option>
+    <option id="option21">6</option>
+    <option id="option23">7</option>
+    <option id="option25">8</option>
+    <option id="option31">9</option>
+    <option id="option34">10</option>
+    <option id="option35">11</option>
+    <option id="option36">12</option>
+    </select>
+    <select apple-part="com.apple.Dashcode.part.backpopupbutton" id="year_start" apple-group="popup2">
+	     <option apple-group="popup2">2008</option>
+	     <option apple-group="popup2">2009</option>
+	     <option apple-group="popup2">2010</option>
+	     <option apple-group="popup2">2011</option>
+ 	     <option apple-group="popup2">2012</option>
+	     <option apple-group="popup2">2013</option>
+	     <option apple-group="popup2">2014</option>
+	     <option apple-group="popup2">2015</option>
+	     <option apple-group="popup2">2016</option>
+	     <option apple-group="popup2">2017</option>
+	     <option apple-group="popup2">2018</option>
+	     <option apple-group="popup2">2019</option>
+	     <option apple-group="popup2">2020</option>
+     </select>
+    <select apple-part="com.apple.Dashcode.part.backpopupbutton" id="Division_Input" apple-group="popup">
+	     <option apple-group="popup" value="ΠΖ">Πεζικό</option>
+	      <option apple-group="popup" value="ΠΒ">Πυροβολικό</option>
+	       <option apple-group="popup" value="ΤΘ">Τεθωρακισμένα</option>
+         <option id="option37" value="ΜΧ">Μηχανικό</option>
+         <option id="option38" value="ΔΒ">Διαβιβάσεις</option>
+         <option id="option39" value="ΥΓ">Υγειονομικό</option>
+         <option id="option40" value="ΤΧ">Τεχνικό</option>
+         <option id="option41" value="ΥΠ">Υλικού Πολέμου</option>
+         <option id="option42" value="ΠΛ">Έρευνας και Πληροφορικής</option>
+         <option id="option40" value="ΑΣ">Αεροπορία Στρατού</option>
+    </select>
+
+    <select apple-part="com.apple.Dashcode.part.backpopupbutton" id="shortened_selection" apple-group="popup" style="">
+	<option apple-group="popup" value="9">9μηνο</option>
+	<option apple-group="popup" value="6">6μηνο</option>
+	<option apple-group="popup" value="3">3μηνο</option>
+</select>
+    <div apple-part="com.apple.Dashcode.part.checkboxbutton" id="Is_short" apple-group="checkboxbutton">
+	<input type="checkbox" name="Checkbox" apple-group="checkboxbutton" id="shortel">
+	<div style="position: absolute; top: 2px; left: 18px; text-align: left; vertical-align: middle;" apple-group="checkboxbutton" id="checkboxbutton1">Μειωμένη θητεία</div>
+</div>
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="Rank_desc" apple-group="text"></div>
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="Division_desc" apple-group="text1"></div>
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="Name_desc" apple-group="text2"></div>
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="Date_desc" apple-group="text3"></div>
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="Prison_desc" apple-group="text4"></div>
+    <input type="text" name="" value="" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" id="prison" apple-group="textfield">
+
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-text-overflow="ellipsis" id="url" apple-group="text" apple-default-image-visibility="hidden" onclick="widget.openURL('http://www.macgiorgosgr.com')"></div>
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="e-mail" apple-group="text"></div>
+    <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-text-overflow="ellipsis" id="e-mail_addr" apple-group="text" apple-default-image-visibility="hidden" onclick="widget.openURL('mailto:macgiorgosgr@macgiorgosgr.com')"></div>
+    </div>
+</body>
+</html>
